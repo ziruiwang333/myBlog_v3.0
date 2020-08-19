@@ -1,0 +1,44 @@
+{% extends 'blog/myBase.html' %}
+{% load static %}
+<!--body background="images/bg.jpg"-->
+{% block title %}
+	<!--Title><-->
+	<div class="title">Welcome to Zirui's Blog</div>
+{% endblock %}
+
+{% block content %}
+	<!--Me  infoTitle & infoBody><-->
+	<div class="me">
+		<div class="photo"><img src="{% static 'images/myPhoto.png' %}" width="80" height="102"/></div>
+		<div class="personal">
+		<div class="name1"><span class="infoTitle">Name</span>: <span class="infoBody">Zirui Wang</span></div>
+		<div class="age1"><span class="infoTitle">Age</span>: <span class="infoBody">22</span></div>
+		<div class="university1"><span class="infoTitle">University</span>: <span class="infoBody">University of Birmingham</span></div>
+		<div class="college1"><span class="infoTitle">College</span>: <span class="infoBody">School of Computer Science</span></div>
+		<div class="subject1"><span class="infoTitle">Subject</span>: <span class="infoBody">Computer Science</span></div>
+		<div class="email1"><span class="infoTitle">Email</span>: <span class="infoBody">zxw780@student.bham.ac.uk</span></div>
+		</div>
+	</div>
+	
+	<!--Top Post><-->
+	<div class="topPost" align='center'>
+		<div class="topView">Top View:</div>
+		<div class="topPostTitle">{{top_post.title}}</div>
+		<div class="topPostContent">{{top_post.text|safe|truncatechars:200|linebreaksbr}}<a href="{% url 'post_detail' pk=top_post.pk %}"><span class="topPostMore">Read more>></span></a></div>
+		<div class="topPostDate">{{top_post.published_date}}</div>
+	</div>
+	
+	<div class="mostRecent" align='center'>
+		<div class="mostRecentText">Most Recent:</div>
+		<div class="mostRecentTitle">{{most_recent.title}}</div>
+		<div class="mostRecentContent">{{most_recent.text|safe|truncatechars:200|linebreaksbr}}<a href="{% url 'post_detail' pk=most_recent.pk %}"><span class="topPostMore">Read more>></span></a></div>
+		<div class="mostRecentDate">{{most_recent.published_date}}</div>
+	</div>
+	
+	
+	<!--See more post>
+	<div class="morePost"><a href="#">More>></a></div>
+	<-->
+{% endblock %}
+
+	<div class="bottomBlank"/>

@@ -1,0 +1,18 @@
+{% load static %}
+<html>
+	<head>
+		<title>Zirui's Blog</title>
+		<link rel="stylesheet" href="{% static 'css/photo.css' %}">
+		<script type="text/javascript" src="{% static 'javascript/backButton.js' %}"></script>
+	</head>
+	
+	<body>
+		<div align="center" class="photoClass">
+			<img src="{{photoPK.photo.url}}"/>
+		</div>
+		<div class="photoDescribe">{{photoPK.describe}}</div>
+		<button type="button" class="backButton" onclick="back()">Back</button>
+	</body>
+
+
+</html>

@@ -1,0 +1,20 @@
+{% extends 'blog/myBase.html'%}
+{% load static %}
+<script type="text/javascript" src="{% static 'javascript/backButton.js' %}"></script>
+{% block title %}
+	<div class="title">{{ album.album_name }}</div>
+{% endblock %}
+
+{% block content %}
+	<div class="blank">
+		{% for photo1 in photos %}
+			<div class ="dailyPhotoLoop">
+				<div class="dailyPhoto" ><a href="{% url 'photo' pk=photo1.pk %}"><img id="myImg" src="{{photo1.compressed_photo.url}}" title={{photo1.title}}/></a></div>
+			</div>
+		{%endfor%}
+	</div>
+	
+	<div class="blankBottom"/>
+	
+	<button type="button" class="backButton" onclick="back()">Back</button>
+{% endblock %}

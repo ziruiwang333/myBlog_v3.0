@@ -1,0 +1,296 @@
+
+/*.leftBar{
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. 
+    background-color: #f5f5f5;
+}*/
+
+@font-face{
+	font-family: 'Pangolin-Regular';
+	src: url('../fonts/Pangolin-Regular.ttf');
+}
+
+@font-face{
+	font-family: 'Comfortaa-Medium';
+	src: url('../fonts/Comfortaa-Medium.ttf');
+}
+
+@font-face{
+	font-family: 'Kalam-Bold';
+	src: url('../fonts/Kalam-Bold.ttf')
+}
+
+body{
+	background-color: #F3F3FA;
+}
+
+.leftBar{
+	display: block;
+	padding: 20px;
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	overflow: scroll;
+	background-color: #6ecadc;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.introName h1{
+	text-align: center;
+	color: white;
+	font-family: Kalam-Bold;
+	letter-spacing: 2;
+}
+
+.leftBarTitle h3{
+	color: white;
+	font-family: Pangolin-Regular;
+	letter-spacing: 2;
+}
+
+.introPhoto{
+	text-align: center;
+}
+
+.introPhoto img{
+	width: 100px;
+	margin: 0 auto;
+}
+
+.phone, .email, .address{
+	font-family: Pangolin-Regular;
+	letter-spacing: 1;
+}
+
+.introContent {
+	margin-left:300px;
+	font-family: Comfortaa-Medium;
+	line-height: 1.7;
+}
+
+.address{
+	line-height: 4px;
+}
+
+.education{
+	margin-left: -40px;
+	width: 200px;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #6ecadc;
+	margin-bottom: 20px;
+	font-family: Pangolin-Regular;
+	letter-spacing: 1;
+}
+
+.introUniversity{
+	font-size: 32px;
+	font-weight: bold;
+	font-family: Pangolin-Regular;
+	letter-spacing: 2;
+	ont-size: 30;
+}
+
+.introUniTime{
+	font-size: 15px;
+	font-weight: normal;
+	margin-left: 30px;
+	font-family: Pangolin-Regular;
+	letter-spacing: 1;
+}
+
+.introCurrent{
+	font-size: 20px;
+	margin-bottom: 20px;
+	margin-top: 5px;
+}
+
+.introCollege{
+	display: inline;
+	font-weight: bold;
+}
+
+.introCollegeDetail{
+	font-weight: normal;
+}
+
+.introSubject{
+	display: inline;
+	margin-left: 150px;
+	font-weight: bold;
+}
+
+.introSubjectDetail{
+	font-weight: normal;
+}
+
+.introCourses{
+	margin-top: 20px;
+}
+
+.courses{
+	margin-bottom: 7px;
+	font-weight: bold;
+}
+
+.introYearOne{
+	margin-left: 50px;
+	float: left;
+}
+
+.yearOne{
+	font-weight: bold;
+}
+
+.introYearTwo{
+	float: left;
+	margin-left: 50px;
+}
+
+.yearTwo{
+	font-weight: bold;
+}
+
+.introYearThree{
+	float: left;
+	margin-left: 50px;
+}
+
+.yearThree{
+	font-weight: bold;
+}
+
+.introWorkExperience{
+	clear: both;
+	margin-top: 200px;
+}
+
+.workExperience{
+	margin-left: -40px;
+	width: 200px;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #FFD306;
+	margin-bottom: 20px;
+	font-family: Pangolin-Regular;
+	letter-spacing: 1;
+}
+
+.company{
+	font-size: 25px;
+	font-weight: bold;
+	font-family: Pangolin-Regular;
+	letter-spacing: 2;
+	font-size: 30;
+}
+
+.workTime{
+	font-size: 15px;
+	font-weight: normal;
+	margin-left: 30px;
+	font-family: Pangolin-Regular;
+	letter-spacing: 1;
+
+}
+
+.jobTitle{
+	font-size: 20px;
+	margin-top: 5px;
+}
+
+.jobOneDetail{
+	padding: 20px;
+	padding-right: 200px;
+}
+
+.introPersonalStatement{
+	margin-top: 30px;
+}
+
+.personalStatement{
+	margin-left: -40px;
+	width: 200px;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #73BF00;
+	margin-bottom: 10px;
+	font-family: Pangolin-Regular;
+	letter-spacing: 1;
+}
+
+.statementDeatil{
+	padding: 20px;
+	padding-right: 200px;
+}
+
+.introBack{
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	height: 75px;
+	width: 75px;
+	border-radius: 75px;
+	background-color: #CDCD9A;
+	text-align: center;
+	line-height: 3;
+	display: block;
+	font-size: 25;
+	font-family: Pangolin-Regular;
+}
+
+.introBack a{
+	color: #5B4B00;
+	letter-spacing: 1;
+	text-decoration:none
+}
+
+a:hover{
+	text-decoration: underline;
+	color: #930093;
+}
+
+a:visited{
+	color: #5B4B00;
+}
+
+.backButton{
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	height: 75px;
+	width: 75px;
+	border-radius: 75px;
+	background-color: #CDCD9A;
+	text-align: center;
+	line-height: 2;
+	font-size: 27;
+	font-family: Pangolin-Regular;
+	cursor: pointer;
+}
+
+.icons{
+	margin-top: 40px;
+}
+
+.githubIcon img{
+	width: 30px;
+	display: inline-block;
+	margin-right: 10px;
+
+}
+
+.facebookIcon img{
+	width: 30px;
+	display: inline-block;
+}

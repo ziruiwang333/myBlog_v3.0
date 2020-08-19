@@ -1,0 +1,38 @@
+
+@font-face{
+	font-family: 'Itim-Regular';
+	src: url('../fonts/Itim-Regular.ttf');
+}
+
+div.post{
+	margin-top: 50px;
+	text-align: center;
+	font-family: 'Itim-Regular';
+	font-size: 20px;
+	color: #4F9D9D;
+}
+
+div.postTitle{
+	display: inline-block;
+	position: absolute;
+}
+
+.postTitle a{
+	color: #4F9D9D;
+}
+
+.postTitle a:hover{
+	color: #336666;
+}
+
+div.author{
+	display: inline-block;
+	position: absolute;
+	margin-left: 570px;
+}
+
+div.date{
+	display: inline-block;
+	margin-left: 700px;
+}
+

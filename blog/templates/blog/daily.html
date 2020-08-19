@@ -1,0 +1,13 @@
+{% extends 'blog/myBase.html' %}
+
+{% block title %}
+		<div class="title">My Albums</div>
+{% endblock %}
+
+{% block content %}
+	<div class="dailyAlbumList">
+		<div class="blank"/>
+		{% for album in albums %}
+			<div class="albumName"><a href="{% url 'daily_detail' pk=album.pk album_name=album.album_name %}">{{ album.album_name }}</a></div>
+		{% endfor %}
+{% endblock %}

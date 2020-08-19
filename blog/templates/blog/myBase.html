@@ -1,0 +1,27 @@
+{% load static %}
+<html>
+	<head>
+		<title>Zirui's Blog</title>
+		<link rel="stylesheet" href="{% static 'css/common/linkBar.css' %}">
+		<link rel="stylesheet" href="{% static 'css/common/title.css' %}">
+		<link rel="stylesheet" href="{% static 'css/index.css' %}">
+		<link rel="stylesheet" href="{% static 'css/introduction.css' %}">
+		<link rel="stylesheet" href="{% static 'css/daily.css' %}">
+		<link rel="stylesheet" href="{% static 'css/posts.css' %}">
+		<link rel="stylesheet" href="{% static 'css/myBase.css' %}">
+		<script type="text/javascript" src="{% static 'javascript/backButton.js' %}"></script>
+	</head>
+	
+	<body>
+		{% block title %}
+		{% endblock %}
+		<div class="linkBar">
+			<div class="home"><a href="/">Home</a></div>
+			<div class="posts"><a href="{% url 'posts' %}">Posts</a></div>
+			<div class="daily"><a href="{% url 'daily' %}">My Albums</a></div>
+			<div class="introduction"><a href="{% url 'introduction' %}">About Me</a></div>
+		</div>
+		{% block content %}
+		{% endblock %}
+	</body>
+</html>

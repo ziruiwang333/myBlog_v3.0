@@ -1,0 +1,143 @@
+/*
+*comments
+*/
+
+@font-face{
+	font-family: 'BalooTamma2-Medium';
+	src: url('../fonts/BalooTamma2-Medium.ttf');
+}
+
+@font-face{
+	font-family: 'Piedra-Regular';
+	src: url('../fonts/Piedra-Regular.ttf');
+}
+
+a:link{
+	text-decoration: none;
+	color: #5B4B00;
+}
+
+a:visited{
+	color: #5B4B00;
+}
+
+a:hover{
+	text-decoration: underline;
+	color: #930093;
+}
+
+div.me{
+	text-align: center;	
+	margin-top: 50px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+div.photo{
+	margin-left: 50px;
+	display: inline-block;
+}
+
+span.infoTitle{
+	margin-left: 20px;
+	font-style: normal;
+	font-weight: bold;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+span.infoBody{
+	font-family:"Lucida Console", Monaco, monospace;
+}
+
+div.personal{
+	text-align: left;
+	display: inline-block;
+}
+
+div.more{
+	line-height: 50px;
+	text-align: center;
+	margin-top: 300px;
+}
+
+div.topView{
+	margin-right: 875px;
+	margin-bottom: 20px;
+	font-size: 25;
+}
+
+div.topPostTitle{
+	font-family: Piedra-Regular;
+	font-size: 30;
+	letter-spacing: 2;
+	margin-bottom: 15px;
+}
+
+div.topPost{
+	margin-top:80;
+	font-family: 'BalooTamma2-Medium';
+	background-color: #FFF3EE;
+/*	display: inline-block;
+	position: relative;
+	transform: translateX(-50%);
+	left: 50%;*/
+	margin: 80px auto 0;
+	width: 1000px;
+	color: #28004D;
+}
+
+div.topPostContent{
+	width: 800px;
+	font-size: 17;
+}
+
+span.topPostMore{
+	margin-left: 10px;
+	font-size: 20;
+	font-weight: bold;
+}
+
+div.topPostDate{
+	margin-top: 30px;
+}
+
+
+
+
+
+
+div.mostRecent{
+	margin-top:80;
+	font-family: 'BalooTamma2-Medium';
+	background-color: #F3F3FA;
+/*	display: inline-block;
+	position: relative;
+	transform: translateX(-50%);
+	left: 50%;*/
+	margin: 80px auto 0;
+	width: 1000px;
+	color: #28004D;
+	margin-bottom: 200px;
+}
+
+div.mostRecentTitle{
+	font-family: Piedra-Regular;
+	font-size: 30;
+	letter-spacing: 2;
+	margin-bottom: 15px;
+}
+
+div.mostRecentContent{
+	width: 800px;
+	font-size: 17;
+}
+
+div.mostRecentDate{
+	margin-top: 30px;
+}
+
+div.mostRecentText{
+	margin-right: 830px;
+	margin-bottom: 20px;
+	font-size: 25;
+}
+

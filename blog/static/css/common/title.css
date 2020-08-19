@@ -1,0 +1,10 @@
+div.title{
+	/*background-image: url(../../images/bgTitle.jpg);*/
+	background-color: #97CBFF;
+	color: #7373B9;
+	font-size: 50px;
+	text-align: center;
+	height: 200px;
+	line-height: 200px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
