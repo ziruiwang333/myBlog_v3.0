@@ -37,6 +37,11 @@ div.photo{
 	display: inline-block;
 }
 
+div.photo img{
+	height: 125;
+	width: auto;
+}
+
 span.infoTitle{
 	margin-left: 20px;
 	font-style: normal;
