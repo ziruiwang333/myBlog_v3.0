@@ -1,5 +1,5 @@
 from django.test import TestCase
-from .models import MyDetail
+from blog.models import MyDetail
 import datetime
 # Create your tests here.
 
@@ -14,12 +14,24 @@ class MyDetailTest(TestCase):
         name = testQuery.name
         print("name: " + name)
         self.assertEquals(name, 'Zirui Wang')
+        
+    def test_name_max_length(self):
+        testQuery = MyDetail.objects.get(id=1)
+        max_length = testQuery._meta.get_field('name').max_length
+        print("name max length: " + str(max_length))
+        self.assertEquals(max_length, 50)
     
     def test_age(self):
         testQuery = MyDetail.objects.get(id=1)
         age = testQuery.age
         print("age: " + age)
         self.assertEquals(age, '22')
+        
+    def test_age_max_length(self):
+        testQuery = MyDetail.objects.get(id=1)
+        max_length = testQuery._meta.get_field('age').max_length
+        print("age max length: " + str(max_length))
+        self.assertEquals(max_length, 10)
     
     def test_date_of_birth(self):
         testQuery = MyDetail.objects.get(id=1)
@@ -33,11 +45,23 @@ class MyDetailTest(TestCase):
         print("phone1: " + phone1)
         self.assertEquals(phone1, '+447718937880')
         
+    def test_phone1_max_length(self):
+        testQuery = MyDetail.objects.get(id=1)
+        max_length = testQuery._meta.get_field('phone1').max_length
+        print("phone1 max length: " + str(max_length))
+        self.assertEquals(max_length, 50)
+        
     def test_phone2(self):
         testQuery = MyDetail.objects.get(id=1)
         phone2 = testQuery.phone2
         print("phone2: " + phone2)
         self.assertEquals(phone2, '')
+        
+    def test_phone2_max_length(self):
+        testQuery = MyDetail.objects.get(id=1)
+        max_length = testQuery._meta.get_field('phone2').max_length
+        print("phone2 max length: " + str(max_length))
+        self.assertEquals(max_length, 50)
         
     def test_email(self):
         testQuery = MyDetail.objects.get(id=1)
@@ -45,11 +69,23 @@ class MyDetailTest(TestCase):
         print("email: " + email)
         self.assertEquals(email, 'zxw780@student.bham.ac.uk')
         
+    def test_email_max_length(self):
+        testQuery = MyDetail.objects.get(id=1)
+        max_length = testQuery._meta.get_field('email').max_length
+        print("email max length: " + str(max_length))
+        self.assertEquals(max_length, 50)
+        
     def test_country(self):
         testQuery = MyDetail.objects.get(id=1)
         country = testQuery.country
         print("country: " + country)
         self.assertEquals(country, 'United Kingdom')
+        
+    def test_country_max_length(self):
+        testQuery = MyDetail.objects.get(id=1)
+        max_length = testQuery._meta.get_field('country').max_length
+        print("country max length: " + str(max_length))
+        self.assertEquals(max_length, 50)
         
     def test_city(self):
         testQuery = MyDetail.objects.get(id=1)
@@ -57,8 +93,15 @@ class MyDetailTest(TestCase):
         print("city: " + city)
         self.assertEquals(city, 'Birmingham')
        
+    def test_city_max_length(self):
+        testQuery = MyDetail.objects.get(id=1)
+        max_length = testQuery._meta.get_field('city').max_length
+        print("city max length: " + str(max_length))
+        self.assertEquals(max_length, 50)
+       
     def test_address(self):
         testQuery = MyDetail.objects.get(id=1)
         address = testQuery.address
         print("address: " + address)
         self.assertEquals(address, 'Selly Oak')
+        
